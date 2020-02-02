@@ -4,11 +4,15 @@ header .row img{
 
 
 .logoo{
-  height: 700px;
-  width: 1000px;
+  height: 500px;
+  width: 650px;
   float: right;
   margin-left: 80% !important;
-  
+}
+
+.logoo:hover{
+  transform: scale(1.05);
+  transition: 0.5s ease-in;
 }
 .themecolor {
     background-color: rgb(160, 142, 142);
@@ -28,20 +32,21 @@ header .row img{
 }
 .attrn {
     height: auto;
-    background-color:white;
+    padding-bottom: 10px;
+
 }
 .attrn-text {
+  color: #000000c0;
    width: 45%;
    font-weight:bold;
    font-size: 55px;
    font-family: 'Montserrat',Arial,sans-serif;
 }
 .attrn-text-inner {
-    font-size: 25px;
+    font-size: 22px;
     width: 45%;
-    color: #9c9c9c;
-    font-family: 'montserrat',Arial,sans-serif;
-
+    color: white;
+    font-family: sans-serif;
 }
 .attrn-cmore {
     background:linear-gradient(to right,#b45eb7,#2c59ed);
@@ -55,11 +60,35 @@ header .row img{
     box-shadow: 0px 10px 30px gray;
     }
     .menuitem {
-        font-size: 20px;
+        font-size: 19px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        
+    }
+    .nav-item{
+      color: white
     }
     .menuitem:hover {
-        background-color: #c7c2c2;
+        background-color: #710e7486;
+        box-shadow: 0px 8px 10px 5px rgba(65, 64, 64, 0.603);
     }
+    .dropdown-item{
+      background-color: #b45eb7;
+    }
+
+    .nav-link{
+    color: #c6d4df !important;
+}
+.navbar-brand{
+    color:#c6d4df !important;
+}
+.dropdown:hover>.dropdown-menu {
+    display: block;
+    top: 100%;
+    background-color: #b45eb7;
+
+  }
+
+
     /*footer begins from here*/
    
     .colll{
@@ -111,11 +140,12 @@ header .row img{
       }
       
       /* Style the counter cards */
-      .card {
+      .mainwala .card {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
         padding: 16px;
         text-align: center;
-        background-color: #f1f1f1;
+        border-radius: 15px;
+        
       }
       
       /* Responsive columns - one column layout (vertical) on small screens */
@@ -129,29 +159,89 @@ header .row img{
 
 
      .image-top{
-         height: 250px;
-         width: 250px;
+         height: 120px;
+         width: 120px;
          text-align: centers;
      }
 
      .imagee{
-       height: 80px;
-       width: 80px;
-     }
+        display: block;
+        width: 100%;
+        height: auto;
+        box-shadow: 0px 10px 5px grey ;
+      }
+      
+
+      .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 100%;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.363);
+        overflow: hidden;
+        width: 0;
+        height: 100%;
+        transition: .5s ease;
+      }
+
+      .card:hover .overlay {
+        width: 100%;
+        left: 0;
+      }
+
+      .overlay p {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        white-space: nowrap;
+      }
+      .festext {
+        font-size: 20px;
+      }
      .colli .card p{
-      text-align: right;
+      text-align: center;
       font-size: 20px;
       font-weight: bold;
       
      }
      .colli .card {
        padding-bottom: 0 30px;
+      
      }
-
+     .mainwala .card{
+       height: 371px;
+     }
 
      /* hover card */
 
      .mainwala .card:hover{
-       box-shadow: 0px 6px 6px 6px grey;
+       box-shadow: 0px 10px 20px 5px rgba(42, 78, 177, 0.8);
        transition: 0.6s;
      }
+
+     .back{
+      background-image: url(./bg1-01-2.png);
+      background-repeat: no-repeat;
+      background-size: 80%;
+      background-image: cross-fade();
+    } 
+
+    .back2{
+      background-image: url(./bg2-01-2.png);
+      background-repeat: no-repeat;
+      background-size: 80%;
+      background-image: cross-fade();
+    } 
+
+    .mainwala .ttd{
+      background-color: lightgreen ;
+    }
+    .mainwala .ttd:hover{
+      background-color: rgb(100, 198, 231);
+      transform: scale(1.1);
+    }
