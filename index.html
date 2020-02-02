@@ -8,9 +8,23 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/mystyle.css">
     <link rel="stylesheet" href="./css/all.css">
+    <style>
+    
+
+    /* main{
+      background-image: url(./img/bg1-01-1.png);
+      background-repeat: no-repeat;
+      background-size: 80%;
+      background-image: cross-fade();
+    } */
+
+    
+    </style>
+    
 </head>
 <body>
   <header>
+    <div class="grad" style="background: linear-gradient(#ec008c,#fc6767);">
      <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand nav-img display-4" href="#"><img src="./img/logo.png" height="50px" width="100px"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,21 +32,18 @@
         </button>
       
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link menuitem" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link menuitem" style="color: white" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link menuitem" href="#">About VN2020</a>
+              <a class="nav-link menuitem" style="color: white" href="#">About VN2020</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link menuitem" href="#">News</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link menuitem" href="#">Visit Tilottama</a>
+              <a class="nav-link menuitem" style="color: white" href="#">News</a>
             </li>
             <li class="dropdown">
-              <a class="btn dropdown-toggle nav-item nav-link menuitem" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a style="color: white" class="btn dropdown-toggle nav-item nav-link menuitem" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Places to visit
               </a>
             
@@ -44,9 +55,50 @@
 
           </ul>
           <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Your Name">
-            <button class="aply-visa"><a class="nav-link text-white" href="#">Apply Visa</a></button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+              Log-in
+            </button></form>
+            <div class="modal fade" id="myModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title">Log-in</h4>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                  </div>
+                  <form>
+                    <div class="modal-body">
+                    <label for="username"> Username:</label>
+                        <input type="text" name="username" id="username"><br>
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" id="password">
+                        </div>
+                  <div class="modal-footer">
+                    <button type="submit" class="btn btn-danger" data-dismiss="modal">Log In</button>
+                  </div>
           </form>
+           <!-- <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="email" placeholder="e-mail">
+            
+<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
+  SUBSCRIBE
+</button>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-success" id="exampleModalLabel">!! CONGRATULATIONS !!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        You will be notified when we post new updates.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </form> -->
         </div>
       </nav>
       <div class="container">
@@ -63,91 +115,109 @@
             </div>
           </div>
             <div class="col-lg-3 col-md-3 col-sm-12">
-              <img class="logoo" src="./img/bg logo-01.png" alt="">
+              <a href="#"><img class="logoo" src="./img/xs-01.png" alt=""></a>
             </div>
         </div>
-        
-                 
-              
-        
-        
       </div>
+    </div>
   </header>
   <main>
+     
     <div class="container">
-      <div class="row mainwala">
+      <div class="back">
+      
+      <div class="row mainwala mt-4">
         
         <div class="col-lg-4 col-md-4 col col-sm-12">
-          <div class="card">
+          <div class="card" style="background: linear-gradient(#b45eb7,#2c59ed);">
             <center><img class="image-top rounded-circle" src="./img/download.jpg" alt=""></center>
             <h3>Lumbini</h3>
-            <p></p>
+            <p class="card-body">Lumbini also known as birth place of lord buddha is one of the biggest site for Buddhists from all over the world.It is situated in Kapilvastu district in Lumbini Provience of Nepal.</p>
+            <a href="#"><button class="btn btn-sm ttd">Things To Do</button></a>
           </div>
         </div>
        
         <div class="col-lg-4 col-md-4 col col-sm-12">
-          <div class="card">
+          <div class="card" style="background: linear-gradient(#6ed8cc,#0f5076);">
             <center><img class="image-top rounded-circle" src="./img/download (1).jpg" alt=""></center>
             <h3>Mount Everest</h3>
-            <p></p>
+            <p class="card-body">Mt. Everest is the highest peak in the world. It is known as Chomolongma in Tibetian and Sagarmatha in Nepali.</p>
+            <a href="#"><button class="btn btn-sm ttd">Things To Do</button></a>
           </div>
         </div>
        
         <div class="col-lg-4 col-md-4 col col-sm-12">
-          <div class="card">
+          <div class="card" style="background: linear-gradient(#b45eb7,#6ed8cc);">
             <center><img class="image-top rounded-circle" src="./img/download (2).jpg" alt=""></center>
             <h3>Pokhara</h3>
-            <p></p>
+            <p class="card-body">Pokhara also known as tourist capital of Nepal lies in Kaski district of Nepal. It is famous for adventure sports like paragliding,zip lining,boating,sky diving,etc.</p>
+            <a href="#"><button class="btn btn-sm ttd">Things To Do</button></a>
           </div>
         </div>
       </div>
 
       <div class="row mt-3 mainwala">
         <div class="col-lg-4 col-md-4 col col-sm-12">
-          <div class="card">
+          <div class="card" style="background: linear-gradient(#5d26c1,#a17fe0,#59c173);">
             <center><img class="image-top rounded-circle" src="./img/download (3).jpg" alt=""></center>
             <h3>Rara Lake</h3>
-            <p></p>
+            <p class="card-body">Rara Lake is the largest fresh water lake in Nepal.It is situated in Mugu District and in a part of Rara National Park of Nepal.</p>
+            <a href="#"><button class="btn btn-sm ttd">Things To Do</button></a>
           </div>
         </div>
         <div class="col-lg-4 col-md-4 col col-sm-12">
-          <div class="card">
+          <div class="card" style="background: linear-gradient(#3944a3,#c95278);">
             <center><img class="image-top rounded-circle" src="./img/ntd-e1578385701678.jpg" alt=""></center>
             <h3>Tilicho Lake</h3>
-            <p></p>
+            <p class="card-body">Tilicho Lake also known as highest lake of its size is situated in Manang district of Nepal. It lies in bottom of Annapurna mountain range.</p>
+            <a href="#"><button class="btn btn-sm ttd">Things To Do</button></a>
           </div>
         </div>
         <div class="col-lg-4 col-md-4 col col-sm-12">
-          <div class="card">
+          <div class="card" style="background: linear-gradient(#b45eb7,#2c59ed);">
             <center><img class="image-top rounded-circle" src="./img/1.jpg" alt=""></center>
             <h3>Chitwan</h3>
-            <p></p>
+            <p class="card-body">Chitwan is most popular among all the national parks of Nepal. It is famous for Elephant polo competition which is organized annually.</p>
+            <a href="#"><button class="btn btn-sm ttd">Things To Do</button></a>
           </div>
         </div>
       </div>
 
       <div class="row mt-4">
         <div class="col-lg-6 col-md-6 col-sm-12">
+          <p class="display-3">Major Festivals</p>
+          <p class="festext">Nepal is distinctly known as the world of colorful vibrant festivals. Most of the festivals celebrated in Nepal have religious connotation and some are based on important events from ancient mythology and epic literature.
 
+            Nepalese have diverse beliefs and ethnic backgrounds. Despite these facts, all unite in the celebration of the year’s major festivals. Festivals such as Dashain and Tihar are of national signiﬁcance; such as Bisket Jatra or Rato Machchhendranath Jatra, belong to the traditions of the old Valley towns and still others, such as Chait, are observed only by a particular ethnic community.
+            
+            The vivid cultural diversity of Nepal can be observed in the difference of different festival celebrations. Here are depicted the 10 major festivals in Nepal.</p>
         </div>
 
         <div class=" col-lg-3 col-md-3 col-sm-12 colli mt-4">
           <a href="#">
             <div class="card">
-              <img class="imagee rounded-circle" src="./img/download.jpg" alt="">
-              <p>Lumbini</p>
+              <center><img class="imagee" src="./img/dashain.jpg" alt=""></center>
+                <div class="overlay">
+                  <p>Dashain</p>
+                </div>
+              
+              
             </div>
           </a>
           <a href="#">
             <div class="card mt-3">
-              <img class="imagee rounded-circle" src="./img/download (1).jpg" alt="">
-              <p>Mount Everest</p>
+              <center><img class="imagee" src="./img/tihar.jpg" alt=""></center>
+              <div class="overlay">
+                <p>Tihar</p>
+              </div>
             </div>
           </a>
           <a href="#">
             <div class="card mt-3">
-              <img class="imagee rounded-circle" src="./img/download (2).jpg" alt="">
-              <p>Pokhara</p>
+              <center><img class="imagee" src="./img/teej.jpg" alt=""></center>
+              <div class="overlay">
+                <p>Teej</p>
+              </div>
             </div>
           </a>
         </div>
@@ -155,20 +225,26 @@
           <div class=" col-lg-3 col-md-3 col-sm-12 colli mt-4">
           <a href="#">
             <div class="card">
-              <img class="imagee rounded-circle" src="./img/download (3).jpg" alt="">
-              <p>Rara Lake</p>
+              <center><img class="imagee" src="./img/Mahashivaratri.jpg" style="height: 200px !important;" alt=""></center>
+              <div class="overlay">
+                <p>Mahashivaratri</p>
+              </div>
             </div>
           </a>
           <a href="#">
             <div class="card mt-3">
-              <img class="imagee rounded-circle" src="./img/ntd-e1578385701678.jpg" alt="">
-              <p>Tilucho Lake</p>
+              <center><img class="imagee" src="./img/maghe-sankranti.jpg" alt=""></center>
+              <div class="overlay">
+                <p>Maghe-Sankranti</p>
+              </div>
             </div>
           </a>
           <a href="#">
             <div class="card mt-3">
-              <img class="imagee rounded-circle" src="./img/1.jpg" alt="">
-              <p>Chitwan</p>
+              <center><img class="imagee" src="./img/Buddha Jayanti.jpg" alt=""></center>
+              <div class="overlay">
+                <p>Buddha Jayanti</p>
+              </div>
             </div>
           </a>
 
@@ -178,7 +254,11 @@
 
 
     </div>
-    
+
+    <div class="back2">
+
+    </div>
+    </div>
       
     
 
