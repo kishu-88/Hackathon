@@ -1,33 +1,157 @@
+header .row img{
+  float: right;
+}
+
+
+.logoo{
+  height: 700px;
+  width: 1000px;
+  float: right;
+  margin-left: 80% !important;
+  
+}
+.themecolor {
+    background-color: rgb(160, 142, 142);
+}
 .aply-visa {
-    background-color:rgb(10, 175, 167);
-    font-size: 20px;
+    background-color:rgb(32, 226, 74);
+    font-size: 15px;
     font-weight: bold;
     height: fit-content;
     width: fit-content;
-    position: relative; ;
+    position: relative;
+    border: none;
 }
 .aply-visa:hover {
-    box-shadow: 3px 5px 10px grey;
+    box-shadow: 0px 5px 10px gray;
     border: transparent;
 }
 .attrn {
-    height: fit-content;
-    width: 100%;
-    background-color: rgb(131, 199, 199);
-    float:left;
-   clear: both;
+    height: auto;
+    background-color:white;
 }
 .attrn-text {
    width: 45%;
    font-weight:bold;
    font-size: 55px;
+   font-family: 'Montserrat',Arial,sans-serif;
 }
 .attrn-text-inner {
     font-size: 25px;
     width: 45%;
-    color: rgb(69, 116, 104);
+    color: #9c9c9c;
+    font-family: 'montserrat',Arial,sans-serif;
+
 }
 .attrn-cmore {
-    background: linear-gradient(#b45eb7,#2c59ed);
-    
+    background:linear-gradient(to right,#b45eb7,#2c59ed);
+    border-radius:4px; 
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: rgb(237, 238, 238);
+    width: 150px;
 }
+    .attrn-cmore:hover {
+    box-shadow: 0px 10px 30px gray;
+    }
+    .menuitem {
+        font-size: 20px;
+    }
+    .menuitem:hover {
+        background-color: #c7c2c2;
+    }
+    /*footer begins from here*/
+   
+    .colll{
+        color: blue;
+        box-shadow: 5px 5px 5px 5px gray;
+    }
+    .fab:hover{
+        transform: scale(1.5);
+        box-shadow: 10px 10px 5px gray;
+    }
+    .fas:hover{
+        transform: scale(1.5);
+        box-shadow: 10px 10px 5px gray;
+    }
+    hr {
+        border: 1px solid gray;
+      }
+    .collll{
+        text-align: center;
+    }
+    /* footer end here */
+
+
+
+    /* main starts here */
+    * {
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      /* Float four columns side by side */
+      .column {
+        float: left;
+        width: 25%;
+        padding: 0 10px;
+      }
+      
+      /* Remove extra left and right margins, due to padding in columns */
+      .row {margin: 0 -5px;}
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      /* Style the counter cards */
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+        padding: 16px;
+        text-align: center;
+        background-color: #f1f1f1;
+      }
+      
+      /* Responsive columns - one column layout (vertical) on small screens */
+      @media screen and (max-width: 600px) {
+        .column {
+          width: 100%;
+          display: block;
+          margin-bottom: 20px;
+        }
+      }
+
+
+     .image-top{
+         height: 250px;
+         width: 250px;
+         text-align: centers;
+     }
+
+     .imagee{
+       height: 80px;
+       width: 80px;
+     }
+     .colli .card p{
+      text-align: right;
+      font-size: 20px;
+      font-weight: bold;
+      
+     }
+     .colli .card {
+       padding-bottom: 0 30px;
+     }
+
+
+     /* hover card */
+
+     .mainwala .card:hover{
+       box-shadow: 0px 6px 6px 6px grey;
+       transition: 0.6s;
+     }
